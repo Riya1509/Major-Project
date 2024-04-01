@@ -1,8 +1,8 @@
 <% layout("/layouts/boilerplate") %>
-<<<<<<< HEAD
+
 <body>
     <h3>ALL Listings</h3>
-=======
+
 
 <style>
   #filters{
@@ -40,21 +40,14 @@
   }
 </style>
     <!-- <h3>ALL Listings</h3> -->
->>>>>>> c2fec04 (Added my project)
+
    <!-- 
  <form  method="GET" action="/listings/new">
         <button>Create New Listing</button>
     </form>>
    -->
-<<<<<<< HEAD
-   
-   <div class="row row-cols-lg-3 row-cols-md-2 rows-cols-sm-1">
-    <% for(let listing of allListings){ %>
-       <a href="/listings/<%= listing._id %>" class="listing-link">
-        <div class="card" >
-=======
 
-   <div id="filters">
+    <div id="filters">
     <div class="filter">
      <div> <i class="fa-solid fa-fire"></i></div>
      <p>Trending </p>
@@ -124,7 +117,7 @@
     <% for(let listing of allListings){ %>
        <a href="/listings/<%= listing._id %>" class="listing-link">
         <div class="card  col listing-card" >
->>>>>>> c2fec04 (Added my project)
+
          <img src="<%=listing.image.url %>" class="card-img-top" alt="listing_image" style="height: 20rem;"/>
          <div class="card-img-overlay"> 
           </div>
@@ -132,23 +125,22 @@
          <div class="card-body">
            <p class="card-text">
            <b>  <%=listing.title%> </b> <br/>
-<<<<<<< HEAD
+
            &#8377;<%=listing.price.toLocaleString("en-IN") %></p>
      
-=======
+
            &#8377;<%=listing.price.toLocaleString("en-IN") %>
            <i class="tax-info"> &nbsp; +18% GST</i>
          </p>
->>>>>>> c2fec04 (Added my project)
          </div>
        </div>
        </a>
        <%   } %>
     
    </div>
-<<<<<<< HEAD
+
    
-=======
+
   
    <script>
     let taxSwitch = document.getElementById("flexSwitchCheckDefault");
@@ -166,7 +158,7 @@
     });
    </script>
   
->>>>>>> c2fec04 (Added my project)
+
 
  
 
@@ -174,9 +166,9 @@
 
   
     
-<<<<<<< HEAD
+
 </body>
-=======
->>>>>>> c2fec04 (Added my project)
+
+
 
 
